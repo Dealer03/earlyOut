@@ -42,9 +42,11 @@ INSTALLED_APPS = [
     'crispy_bootstrap5'
 ]
 
-CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
 
-CRISPY_TEMPLATE_PACK = "bootstrap5"
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
+
+AUTH_USER_MODEL = 'user.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -81,9 +83,17 @@ WSGI_APPLICATION = 'eoList.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
+    # "default": {
+    #     "ENGINE": "django.db.backends.mysql",
+    #     "NAME": "eo_list",
+    #     "USER": "Dealer03",
+    #     "PASSWORD": "3Vegcd58#5HaB6",
+    #     "HOST": "127.0.0.1",
+    #     "PORT": "3306",
+    # },
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "eo_list",
+        "NAME": "early_out",
         "USER": "Dealer03",
         "PASSWORD": "3Vegcd58#5HaB6",
         "HOST": "127.0.0.1",
